@@ -36,8 +36,8 @@
 			/*end top*/
 			/*start box*/
 			.box{
-				width:310px;
-				height:310px;
+				width:260px;
+				height:260px;
 				margin:auto;
 				perspective:800px;/*景深*/
 			}
@@ -100,14 +100,14 @@
 			});
 			
 			var i = 0;
-			var str = "能够遇见你是我最大的幸运，有了你生活变得丰富多彩，有了你，世界变得如此迷人；对我来说，不是在最美好的时光遇见了你，而是遇见你后都是最美好的时光！";
+			var str = "能够遇见你是我最大的幸运，有了你生活变得丰富多彩；对我来说，不是在最美好的时光遇见了你，而是遇见你后都是最美好的时光！";
 			
 			window.onload=function typing(){
 				//获取div
 				var mydiv=document.getElementById("text");
 				mydiv.innerHTML+=str.charAt(i);
 				i++;
-				var id=setTimeout(typing,160);
+				var id=setTimeout(typing,200);
 				if(i==str.length){
 					clearTimeout(id);
 				}
